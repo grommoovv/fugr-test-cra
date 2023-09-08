@@ -1,0 +1,15 @@
+@import 'reset.scss';
+@import 'root.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400; // 400, 500, 600, 700
+  color: var(--color-dark-primary);
+  background-color: var(--color-bg-primary);
+}

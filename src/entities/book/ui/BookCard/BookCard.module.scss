@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  background-color: #e4e4e4;
+  height: 500px;
+
+  padding: 20px 40px;
+
+  .media {
+    display: flex;
+    justify-content: center;
+    // width: 100%;
+    height: 200px;
+  }
+
+  .info {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 20px;
+  }
+
+  .categories {
+		min-height: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--color-gray-primary);
+  }
+
+  .title {
+    flex: 1 1 auto;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .authors, .published {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 14px;
+    color: var(--color-gray-primary);
+  }
+}

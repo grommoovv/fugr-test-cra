@@ -1,0 +1,65 @@
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 100vh;
+
+  .primary {
+    background-color: #e4e4e4;
+
+    .media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .image {
+        object-fit: cover;
+      }
+    }
+  }
+
+  .secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      width: 75%;
+
+      .categories,
+      .authors {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--color-gray-primary);
+      }
+
+      .title {
+        font-size: 32px;
+        font-weight: 600;
+      }
+
+      .description {
+        padding: 20px 40px;
+        border: 1px solid #e4e4e4;
+
+        .desc_text {
+          text-align: justify;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+
+	.back_button {
+		position: absolute;
+		top: 40px;
+		left: 40px;
+
+		font-size: 12px;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+}

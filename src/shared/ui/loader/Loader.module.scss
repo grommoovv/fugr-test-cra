@@ -1,0 +1,37 @@
+.loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+
+  .wrap {
+    width: 200px;
+    height: 2px;
+    overflow: hidden;
+  }
+
+  .animation {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark-primary);
+    animation: Anim 1s ease-in-out infinite;
+  }
+
+  @keyframes Anim {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
